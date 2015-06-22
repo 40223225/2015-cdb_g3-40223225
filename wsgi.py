@@ -558,28 +558,28 @@ class Hello(object):
     # 使用 ctx.save() 與 ctx.restore() 以確保各齒輪以相對座標進行旋轉繪圖
     ctx.save()
     # translate to the origin of second gear
-    ctx.translate(400,400)
+    ctx.translate(1000,1000)
     # rotate to engage
     ctx.rotate(pi)
     # put it back
-    ctx.translate(-400,-400)
-    spur.Spur(ctx).Gear(400,400,rp_g1,n_g1, pa, "blue")
+    ctx.translate(-1000,-1000)
+    spur.Spur(ctx).Gear(1000,1000,rp_g1,n_g1, pa, "blue")
     ctx.restore()
 
     # 將第2齒輪逆時鐘轉 90 度之後, 再多轉一齒, 以便與第1齒輪進行囓合
     ctx.save()
     # translate to the origin of second gear
-    ctx.translate(400,400+rp_g1+rp_g2)
+    ctx.translate(1000,1000+rp_g1+rp_g2)
     # rotate to engage
     ctx.rotate(-pi/n_g2)
     # put it back
-    ctx.translate(-(400),-(400+rp_g1+rp_g2))
-    spur.Spur(ctx).Gear(400,400+rp_g1+rp_g2,rp_g2,n_g2, pa, "black")
+    ctx.translate(-(1000),-(1000+rp_g1+rp_g2))
+    spur.Spur(ctx).Gear(1000,1000+rp_g1+rp_g2,rp_g2,n_g2, pa, "black")
     ctx.restore()
 
 
     </script>
-    <canvas id="plotarea" width="1200" height="1200"></canvas>
+    <canvas id="plotarea" width="8000" height="8000"></canvas>
     </body>
     </html>
     '''
