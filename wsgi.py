@@ -43,6 +43,9 @@ for i in range(repeat_no):
 '''
 #@-<<declarations>>
 #@+others
+#@+node:2015.20150623184703.1: ** newheadline
+#@@killcolor
+
 #@+node:2014fall.20141212095015.1777: ** class Hello
 ################# (3) 程式類別定義區
 # 以下改用 CherryPy 網際框架程式架構
@@ -102,7 +105,7 @@ class Hello(object):
         '''
         
         return outstring
-    #@+node:2015.20150623182235.1: *3* index
+    #@+node:2015.20150623182235.1: *3* drawspur
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def drawspur(self, N=20, M=5, P=15):
@@ -133,7 +136,7 @@ class Hello(object):
     '''
 
         return outstring
-    #@+node:2015.20150623182239.1: *3* index
+    #@+node:2015.20150623182239.1: *3* drawspuraction
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def drawspuraction(self, N=20, M=5, P=15):
@@ -835,7 +838,7 @@ class Hello(object):
 
 
     ctx.font = "10px Verdana";
-    ctx.fillText("組員40223146劉琮楚所繪製",x_g1-60, y_g1-10)
+    ctx.fillText("組員40223225張育軒所繪製",x_g1-60, y_g1-10)
     # 按照上面三個正齒輪的囓合轉角運算, 隨後的傳動齒輪轉角便可依此類推, 完成6個齒輪的囓合繪圖
 
     </script>
