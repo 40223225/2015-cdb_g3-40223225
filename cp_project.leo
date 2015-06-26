@@ -16,10 +16,6 @@
 </v>
 <v t="2015.20150330144929.1714"><vh>以下為協同產品開發程式</vh></v>
 <v t="2014fall.20141212095015.1774" a="E"><vh>@path ./</vh>
-<<<<<<< HEAD
-<v t="2015.20150625175108.1" a="E"
-expanded="2015.20150625175108.4,"><vh>@file wsgi.py</vh></v>
-=======
 <v t="2015.20150625175108.1" a="EO"><vh>@file wsgi.py</vh>
 <v t="2015.20150625175108.2"><vh>&lt;&lt;declarations&gt;&gt; (wsgi)</vh></v>
 <v t="2015.20150625175108.3"><vh>newHeadline</vh></v>
@@ -41,7 +37,6 @@ expanded="2015.20150625175108.4,"><vh>@file wsgi.py</vh></v>
 <v t="2015.20150625175108.19"><vh>guessform</vh></v>
 </v>
 </v>
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
 <v t="office.20150407074720.1"
 expanded="office.20150407074720.3,"><vh>@file gear.py</vh></v>
 <v t="2014fall.20141212095015.1780"><vh>@edit setup.py</vh></v>
@@ -290,8 +285,6 @@ def gear(midx, midy, rp, n, 顏色):
 gear(400,400,300,41,"blue")
 
 </t>
-<<<<<<< HEAD
-=======
 <t tx="2015.20150625175108.1"># coding=utf-8
 # 上面的程式內容編碼必須在程式的第一或者第二行才會有作用
 
@@ -1344,7 +1337,6 @@ brython();
 
     return outstring
 </t>
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
 <t tx="amd.20150415160041.1">#要注意 javascript 轉 python 語法差異
 
 #document.getElementById -&gt; doc[]

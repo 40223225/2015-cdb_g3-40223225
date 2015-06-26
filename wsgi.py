@@ -1,9 +1,6 @@
 #@+leo-ver=5-thin
-<<<<<<< HEAD
 #@+node:2015.20150625175108.1: * @file wsgi.py
-=======
 #@+node:2014fall.20141212095015.1775: * @file wsgi.py
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
 # coding=utf-8
 # 上面的程式內容編碼必須在程式的第一或者第二行才會有作用
 
@@ -15,11 +12,8 @@
 #@@tabwidth -4
 
 #@+<<declarations>>
-<<<<<<< HEAD
 #@+node:2015.20150625175108.2: ** <<declarations>> (wsgi)
-=======
 #@+node:2014fall.20141212095015.1776: ** <<declarations>> (wsgi)
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
 import cherrypy
 # 導入 Python 內建的 os 模組, 因為 os 模組為 Python 內建, 所以無需透過 setup.py 安裝
 import os
@@ -51,18 +45,15 @@ for i in range(repeat_no):
 '''
 #@-<<declarations>>
 #@+others
-<<<<<<< HEAD
 #@+node:2015.20150625175108.3: ** newHeadline
 #@@killcolor
 
 
 #@+node:2015.20150625175108.4: ** class Hello
-=======
 #@+node:2015.20150623184703.1: ** newheadline
 #@@killcolor
 
 #@+node:2014fall.20141212095015.1777: ** class Hello
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
 ################# (3) 程式類別定義區
 # 以下改用 CherryPy 網際框架程式架構
 # 以下為 Hello 類別的設計內容, 其中的 object 使用, 表示 Hello 類別繼承 object 的所有特性, 包括方法與屬性設計
@@ -81,11 +72,9 @@ class Hello(object):
     }
 
     #@+others
-<<<<<<< HEAD
     #@+node:2015.20150625175108.5: *3* __init__
-=======
+
     #@+node:2014fall.20141212095015.2004: *3* __init__
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     def __init__(self):
         # 配合透過案例啟始建立所需的目錄
         if not os.path.isdir(data_dir+'/tmp'):
@@ -94,30 +83,24 @@ class Hello(object):
             os.mkdir(data_dir+"/downloads")
         if not os.path.isdir(data_dir+"/images"):
             os.mkdir(data_dir+"/images")
-<<<<<<< HEAD
     #@+node:2015.20150625175108.6: *3* index_orig
-=======
     #@+node:2014fall.20141212095015.1778: *3* index_orig
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     # 以 @ 開頭的 cherrypy.expose 為 decorator, 用來表示隨後的成員方法, 可以直接讓使用者以 URL 連結執行
     @cherrypy.expose
     # index 方法為 CherryPy 各類別成員方法中的內建(default)方法, 當使用者執行時未指定方法, 系統將會優先執行 index 方法
     # 有 self 的方法為類別中的成員方法, Python 程式透過此一 self 在各成員方法間傳遞物件內容
     def index_orig(self, toprint="Hello World!"):
         return toprint
-<<<<<<< HEAD
     #@+node:2015.20150625175108.7: *3* hello
     @cherrypy.expose
     def hello(self, toprint="Hello World!"):
         return toprint
     #@+node:2015.20150625175108.8: *3* index
-=======
     #@+node:2014fall.20141212095015.1779: *3* hello
     @cherrypy.expose
     def hello(self, toprint="Hello World!"):
         return toprint
     #@+node:2014fall.20141215194146.1791: *3* index
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     # 以 @ 開頭的 cherrypy.expose 為 decorator, 用來表示隨後的成員方法, 可以直接讓使用者以 URL 連結執行
     @cherrypy.expose
     # index 方法為 CherryPy 各類別成員方法中的內建(default)方法, 當使用者執行時未指定方法, 系統將會優先執行 index 方法
@@ -132,20 +115,14 @@ class Hello(object):
         <body>
         <a href="drawspur">齒輪模擬</a><br />
         <a href="mygeartest3">齒輪嚙合</a><br />
-<<<<<<< HEAD
         <a href="mygeartest4">齒輪嚙合2</a><br />
-=======
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
         </body>
         </html>
         '''
         
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.9: *3* drawspur
-=======
     #@+node:2015.20150623182235.1: *3* drawspur
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def drawspur(self, N=20, M=5, P=15):
@@ -176,11 +153,8 @@ class Hello(object):
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.10: *3* drawspuraction
-=======
     #@+node:2015.20150623182239.1: *3* drawspuraction
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def drawspuraction(self, N=20, M=5, P=15):
@@ -231,11 +205,8 @@ class Hello(object):
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.11: *3* twoDgear
-=======
     #@+node:2015.20150330144929.1713: *3* twoDgear
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def twoDgear(self, N=20, M=5, P=15):
@@ -263,17 +234,14 @@ class Hello(object):
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.12: *3* threeDgear
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def threeDgear(self, N=20, M=5, P=15):
-=======
     #@+node:2015.20150331094055.1733: *3* threeDgear
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def threeDgear(self, N=20, N1=20,M=5, P=15):
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
         outstring = '''
     <!DOCTYPE html> 
     <html>
@@ -287,31 +255,25 @@ class Hello(object):
     <!-- 啟動 brython() -->
     <body onload="brython()">
         
-<<<<<<< HEAD
     <form method=POST action=do3Dgear>
     齒數:<input type=text name=N><br />
     模數:<input type=text name=M><br />
     壓力角:<input type=text name=P><br />
     <input type=submit value=send>
-=======
     <form method=POST action=mygeartest2>
 
     齒數:<input type=text name=N><br />
     齒數1:<input type=text name=N1><br />
 
     <input type=submit value=Go!Go!Go!>
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     </form>
     </body>
     </html>
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.13: *3* do2Dgear
-=======
     #@+node:2015.20150330144929.1762: *3* do2Dgear
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def do2Dgear(self, N=20, M=5, P=15):
@@ -377,11 +339,8 @@ class Hello(object):
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.14: *3* do3Dgear
-=======
     #@+node:2015.20150331094055.1735: *3* do3Dgear
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def do3Dgear(self, N=20, M=5, P=15):
@@ -665,11 +624,9 @@ class Hello(object):
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.15: *3* mygeartest
-=======
+
     #@+node:2015.20150330144929.1765: *3* mygeartest
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def mygeartest(self, N=20, M=5, P=15):
@@ -816,11 +773,8 @@ class Hello(object):
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.16: *3* mygeartest3
-=======
     #@+node:amd.20150415215023.1: *3* mygeartest2
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def mygeartest3(self, N=20, m=15, p=5,z=15,x=24,c=None,v=None,o=None,l=None):
@@ -917,7 +871,6 @@ class Hello(object):
 
 
     ctx.font = "10px Verdana";
-<<<<<<< HEAD
     ctx.fillText("組員40223225 張育軒所繪製",x_g1-60, y_g1-10)
     # 按照上面三個正齒輪的囓合轉角運算, 隨後的傳動齒輪轉角便可依此類推, 完成6個齒輪的囓合繪圖
 
@@ -1063,9 +1016,8 @@ class Hello(object):
     ctx.restore()
     ctx.font = "10px Verdana";
     ctx.fillText("組員40223225 張育軒所繪製",x_g1-60, y_g1-10)
-=======
+
     ctx.fillText("組員40223225張育軒所繪製",x_g1-60, y_g1-10)
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     # 按照上面三個正齒輪的囓合轉角運算, 隨後的傳動齒輪轉角便可依此類推, 完成6個齒輪的囓合繪圖
 
     </script>
@@ -1075,11 +1027,8 @@ class Hello(object):
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.17: *3* my3Dgeartest
-=======
     #@+node:2015.20150331094055.1737: *3* my3Dgeartest
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def my3Dgeartest(self, N=20, M=5, P=15):
@@ -1225,11 +1174,8 @@ class Hello(object):
     '''
 
         return outstring
-<<<<<<< HEAD
     #@+node:2015.20150625175108.18: *3* doCheck
-=======
     #@+node:2014fall.20141215194146.1793: *3* doCheck
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     @cherrypy.expose
     def doCheck(self, guess=None):
         # 假如使用者直接執行 doCheck, 則設法轉回根方法
@@ -1256,11 +1202,8 @@ class Hello(object):
             # 已經猜對, 從 session 取出累計猜測次數
             thecount = cherrypy.session.get('count')
             return "exact: <a href=''>再猜</a>"
-<<<<<<< HEAD
     #@+node:2015.20150625175108.19: *3* guessform
-=======
     #@+node:2014fall.20141215194146.1789: *3* guessform
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
     def guessform(self):
         # 印出讓使用者輸入的超文件表單
         outstring = str(cherrypy.session.get('answer')) + "/" + str(cherrypy.session.get('count')) + '''<form method=POST action=doCheck>
@@ -1286,11 +1229,7 @@ application_conf = {'/static':{
     
 root = Hello()
 root.gear = gear.Gear()
-<<<<<<< HEAD
-=======
-cherrypy.server.socket_port = 8081
-cherrypy.server.socket_host = '127.0.0.1'
->>>>>>> aba89cbede8f5b0ccb42aaa595e1aec192297090
+
 
 if 'OPENSHIFT_REPO_DIR' in os.environ.keys():
     # 表示在 OpenSfhit 執行
