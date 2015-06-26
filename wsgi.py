@@ -239,6 +239,7 @@ class Hello(object):
     # N 為齒數, M 為模數, P 為壓力角
     def threeDgear(self, N=20, M=5, P=15):
     #@+node:2015.20150331094055.1733: *3* threeDgear
+        return outstring
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
     def threeDgear(self, N=20, N1=20,M=5, P=15):
